@@ -77,8 +77,8 @@ Fuentes de datos
 
 * Microdatos: 
 
-<!--html_preserve--><div id="htmlwidget-5707ede5c5bf0e0bb78b" style="width:120px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5707ede5c5bf0e0bb78b">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = BT]\n\na [label = \"Persona\"]\nb [label = \"Hogar\"]\nc [label = \"Vivienda\"]\nd [label = \"Manzana\"]\n\na -> b -> c -> d\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-03596289e210d1c799bf" style="width:120px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-03596289e210d1c799bf">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = BT]\n\na [label = \"Persona\"]\nb [label = \"Hogar\"]\nc [label = \"Vivienda\"]\nd [label = \"Manzana\"]\n\na -> b -> c -> d\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 
 ### Paquete Censo2017
@@ -88,8 +88,8 @@ Fuentes de datos
 Diagrama Proceso Cálculo Indicador:
 
 
-<!--html_preserve--><div id="htmlwidget-d67f0e3b8aba49924709" style="width:672px;height:200px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d67f0e3b8aba49924709">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\ndata1 [label = \"Tabla \n Personas\", shape = folder, fillcolor = Beige]\ndata2 [label = \"Polígonos \n Censales\", shape = folder, fillcolor = Beige]\nprocess1 [label =  \"Filtros y \n Agregaciones\"]\nprocess2 [label = \"Vinculación por \n Código Censal\" ]\nind [label = \"Indicador\", fillcolor = Beige]\n\n# edge definitions with the node IDs\n{data1} -> process1\n{data2 process1} -> process2 -> ind\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-8f35d875e3217bac2908" style="width:672px;height:200px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f35d875e3217bac2908">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\ndata1 [label = \"Tabla \n Personas\", shape = folder, fillcolor = Beige]\ndata2 [label = \"Polígonos \n Censales\", shape = folder, fillcolor = Beige]\nprocess1 [label =  \"Filtros y \n Agregaciones\"]\nprocess2 [label = \"Vinculación por \n Código Censal\" ]\nind [label = \"Indicador\", fillcolor = Beige]\n\n# edge definitions with the node IDs\n{data1} -> process1\n{data2 process1} -> process2 -> ind\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 * Agregación información poblacional
 
@@ -104,9 +104,11 @@ Trabajo sobre zonas censales
 ### IRH: Indicador de Resilencia de Hogares
 
 Tipos de hogares no monoparentales
-
-$$ \sum_{i=1}^{N} x_i   $$ 
-
+<div>
+$$ 
+\sum_{i=1}^{N} x_i   
+$$ 
+</div>
 ### IEJ: Indicador de escolaridad del jefe de hogar
 
 ### IPJ: Indicador de Participación Juvenil

@@ -315,8 +315,8 @@ div.tocify {
 <li><p>Localidades:</p></li>
 <li><p>Microdatos:</p></li>
 </ul>
-<div id="htmlwidget-5707ede5c5bf0e0bb78b" style="width:120px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5707ede5c5bf0e0bb78b">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = BT]\n\na [label = \"Persona\"]\nb [label = \"Hogar\"]\nc [label = \"Vivienda\"]\nd [label = \"Manzana\"]\n\na -> b -> c -> d\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-03596289e210d1c799bf" style="width:120px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-03596289e210d1c799bf">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = BT]\n\na [label = \"Persona\"]\nb [label = \"Hogar\"]\nc [label = \"Vivienda\"]\nd [label = \"Manzana\"]\n\na -> b -> c -> d\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="paquete-censo2017" class="section level3">
 <h3>Paquete Censo2017</h3>
@@ -325,8 +325,8 @@ div.tocify {
 <div id="vinculación-de-información" class="section level2">
 <h2>Vinculación de información</h2>
 <p>Diagrama Proceso Cálculo Indicador:</p>
-<div id="htmlwidget-d67f0e3b8aba49924709" style="width:672px;height:200px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d67f0e3b8aba49924709">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\ndata1 [label = \"Tabla \n Personas\", shape = folder, fillcolor = Beige]\ndata2 [label = \"Polígonos \n Censales\", shape = folder, fillcolor = Beige]\nprocess1 [label =  \"Filtros y \n Agregaciones\"]\nprocess2 [label = \"Vinculación por \n Código Censal\" ]\nind [label = \"Indicador\", fillcolor = Beige]\n\n# edge definitions with the node IDs\n{data1} -> process1\n{data2 process1} -> process2 -> ind\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8f35d875e3217bac2908" style="width:672px;height:200px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f35d875e3217bac2908">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\ndata1 [label = \"Tabla \n Personas\", shape = folder, fillcolor = Beige]\ndata2 [label = \"Polígonos \n Censales\", shape = folder, fillcolor = Beige]\nprocess1 [label =  \"Filtros y \n Agregaciones\"]\nprocess2 [label = \"Vinculación por \n Código Censal\" ]\nind [label = \"Indicador\", fillcolor = Beige]\n\n# edge definitions with the node IDs\n{data1} -> process1\n{data2 process1} -> process2 -> ind\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>Agregación información poblacional</p></li>
 <li><p>Asociación a código geográfico</p></li>
@@ -338,8 +338,12 @@ div.tocify {
 <p>Trabajo sobre zonas censales</p>
 <div id="irh-indicador-de-resilencia-de-hogares" class="section level3">
 <h3>IRH: Indicador de Resilencia de Hogares</h3>
-<p>Tipos de hogares no monoparentales</p>
-<p><span class="math display">\[ \sum_{i=1}^{N} x_i   \]</span></p>
+Tipos de hogares no monoparentales
+<div>
+<p><span class="math display">\[ 
+\sum_{i=1}^{N} x_i   
+\]</span></p>
+</div>
 </div>
 <div id="iej-indicador-de-escolaridad-del-jefe-de-hogar" class="section level3">
 <h3>IEJ: Indicador de escolaridad del jefe de hogar</h3>

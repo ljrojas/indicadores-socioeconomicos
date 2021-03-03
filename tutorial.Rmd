@@ -134,9 +134,11 @@ Trabajo sobre zonas censales
 ### IRH: Indicador de Resilencia de Hogares
 
 Tipos de hogares no monoparentales
-
-$$ \sum_{i=1}^{N} x_i   $$ 
-
+<div>
+$$ 
+\sum_{i=1}^{N} x_i   
+$$ 
+</div>
 ### IEJ: Indicador de escolaridad del jefe de hogar
 
 ### IPJ: Indicador de Participación Juvenil
