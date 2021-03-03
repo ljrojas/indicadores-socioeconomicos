@@ -13,9 +13,7 @@ output:
     
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 # Documentación Calculo de Indicadores Socioeconómicos
 
@@ -79,18 +77,8 @@ Fuentes de datos
 
 * Microdatos: 
 
-```{r, echo=FALSE}
-DiagrammeR::grViz("digraph {
-graph [layout = dot, rankdir = BT]
-
-a [label = 'Persona']
-b [label = 'Hogar']
-c [label = 'Vivienda']
-d [label = 'Manzana']
-
-a -> b -> c -> d
-}", width = 120)
-```
+<!--html_preserve--><div id="htmlwidget-5707ede5c5bf0e0bb78b" style="width:120px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5707ede5c5bf0e0bb78b">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = BT]\n\na [label = \"Persona\"]\nb [label = \"Hogar\"]\nc [label = \"Vivienda\"]\nd [label = \"Manzana\"]\n\na -> b -> c -> d\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 
 ### Paquete Censo2017
@@ -100,26 +88,8 @@ a -> b -> c -> d
 Diagrama Proceso Cálculo Indicador:
 
 
-```{r, echo=FALSE}
-DiagrammeR::grViz("digraph {
-
-graph [layout = dot, rankdir = LR]
-
-# define the global styles of the nodes. We can override these in box if we wish
-node [shape = rectangle, style = filled, fillcolor = Linen]
-
-data1 [label = 'Tabla \n Personas', shape = folder, fillcolor = Beige]
-data2 [label = 'Polígonos \n Censales', shape = folder, fillcolor = Beige]
-process1 [label =  'Filtros y \n Agregaciones']
-process2 [label = 'Vinculación por \n Código Censal' ]
-ind [label = 'Indicador', fillcolor = Beige]
-
-# edge definitions with the node IDs
-{data1} -> process1
-{data2 process1} -> process2 -> ind
-
-}", height = 200)
-```
+<!--html_preserve--><div id="htmlwidget-d67f0e3b8aba49924709" style="width:672px;height:200px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d67f0e3b8aba49924709">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\n\ndata1 [label = \"Tabla \n Personas\", shape = folder, fillcolor = Beige]\ndata2 [label = \"Polígonos \n Censales\", shape = folder, fillcolor = Beige]\nprocess1 [label =  \"Filtros y \n Agregaciones\"]\nprocess2 [label = \"Vinculación por \n Código Censal\" ]\nind [label = \"Indicador\", fillcolor = Beige]\n\n# edge definitions with the node IDs\n{data1} -> process1\n{data2 process1} -> process2 -> ind\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 * Agregación información poblacional
 
